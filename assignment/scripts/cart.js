@@ -3,25 +3,29 @@ console.log('***** Cart Functions *****');
 // We want to see how you are testing your code!!!
 
 let basket =[];
-basket.push('galric');
 
-function addItem(){
-    basket.push()
-    for(i of basket){
-        return true;
-    } 
-    return
+function addItem(itemName) {
+    basket.push('onions');
+        if (itemName === 'onions'){
+            return true;
+        }
 }
 
-function listItems(){
+console.log(`Basket is ${basket}`); 
+console.log('Adding onions (expect true)', addItem('onions'));
+console.log(`Basket is now ${basket}`);
 
 
+
+
+function listItems(array){
+    for(let item in basket);
+    return console.log(item[i]);
 }
 
 function empty(){
 
 }
 
-console.log(`Basket is ${basket}`);
-console.log('Adding garlic (expect true)', addItem());
-console.log(`Basket is now ${basket}`);
+
+
