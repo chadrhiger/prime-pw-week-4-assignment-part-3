@@ -15,15 +15,29 @@ console.log(`Basket is ${basket}`);
 console.log('Adding onions (expect true)', addItem('onions'));
 console.log(`Basket is now ${basket}`);
 
+basket.push('celery');
+basket.push('green peppers');
+
+// loop over items in basket
+// console.log each individual item on a new line
 
 
-
-function listItems(array){
-    for(let item in basket);
-    return console.log(item[i]);
+function listItems(){
+    for(item in basket){
+         console.log('Basket contains:', basket[0], basket[1], basket[2]);
+        //  console.log('Basket contains:', basket[1])
+        //  console.log('Basket contains:', basket[2])
+    } 
 }
+listItems()
+
+
 
 function empty(){
+    basket === [];
+    if( basket === 0){
+        console.log('Basket is empty.');
+    }
 
 }
 
