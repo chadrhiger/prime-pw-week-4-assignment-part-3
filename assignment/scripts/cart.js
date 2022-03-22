@@ -18,28 +18,17 @@ console.log(`Basket is now ${basket}`);
 basket.push('celery');
 basket.push('green peppers');
 
-// loop over items in basket
-// console.log each individual item on a new line
-
 
 function listItems(){
-    for(item in basket){
-         console.log('Basket contains:', basket[0], basket[1], basket[2]);
-        //  console.log('Basket contains:', basket[1])
-        //  console.log('Basket contains:', basket[2])
-    } 
+    for(let item of basket) {
+        console.log(item);
+    }
 }
 listItems()
 
-
-
 function empty(){
-    basket === [];
-    if( basket === 0){
-        console.log('Basket is empty.');
-    }
-
-}
-
-
-
+    let basket = [];
+    console.log('Basket is empty');
+    
+}    
+empty()
