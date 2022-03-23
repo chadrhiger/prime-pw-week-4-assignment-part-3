@@ -6,18 +6,18 @@ let basket =[];
 // const maxItems = 5;
 
 function addItem(itemName) {
-    basket.push('onions');
-        if (itemName = 'onions'){
-            return true;
-        }
+    basket.push(itemName);
+    return true;
 }
 
-console.log(`Basket is ${basket}`); 
-console.log('Adding onions (expect true)', addItem());
-console.log(`Basket is now ${basket}`);
 
-basket.push('celery');
-basket.push('green peppers');
+console.log(`Basket is ${basket}`); 
+console.log('Adding mirepoix (expect true)', addItem('mirepoix'));
+console.log(`Basket is now ${basket}`);
+console.log('Adding onions (expect true)', addItem('onions'));
+console.log('Adding celery (expect true)', addItem('celery'));
+console.log('Adding green peppers (expect true)', addItem('green peppers'));
+console.log(`Basket is now ${basket}`);
 
 
 function listItems(){
