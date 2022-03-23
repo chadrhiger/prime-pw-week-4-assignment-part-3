@@ -19,32 +19,23 @@ console.log('Adding celery (expect true)', addItem('celery'));
 console.log('Adding green peppers (expect true)', addItem('green peppers'));
 console.log(`Basket is now ${basket}`);
 
-
+// list current basket items
 function listItems(){
     for(let item of basket) {
-        console.log('Thru unholy computer sorcery, the basket now contains:', item);
+        console.log('Fire sale at the temple! Your basket now contains:', item);
     }
 }
 listItems();
 
+// reset the basket array to 0
+// 
 function empty(){
-    let basket = [];
-    console.log('Basket has been emptied.');   
-}    
+    basket = [];
+    console.log('Jesus has overturned your basket.');
+}
 empty();
+console.log(`Basket is now ${basket}`);
 
 
-
-// function isFull(){
-//     for (items of basket){
-//         if (items < maxItems){
-//             return false;
-//         }
-//         else if (items >= maxItems){
-//             return true;
-//         }
-//     }    
-// }
-// console.log('Basket is full:', isFull());
 
 
